@@ -30,7 +30,7 @@ Esta é uma API desenvolvida como parte do curso de **Python/Django** realizado 
 
 - Django 4 + Django REST Framework
 
-- Python 3.11
+- Python 3.12
 
 - PostgreSQL (produção) | SQLite (desenvolvimento)
 
