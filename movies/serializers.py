@@ -32,7 +32,8 @@ class MovieListDetailSerializer(serializers.ModelSerializer):  # serializer boni
     genre = GenreSerializer()  # pegando os generos
     rate = serializers.SerializerMethodField(
         read_only=True
-    )  # adicionando mais um campo no model para o serializer ler também
+    )
+    photo = serializers.ImageField()  # adicionando mais um campo no model para o serializer ler também
 
     class Meta:
         model = Movie
@@ -44,6 +45,7 @@ class MovieListDetailSerializer(serializers.ModelSerializer):  # serializer boni
             "release_date",
             "rate",
             "resume",
+            "photo",
         ]  # campos que eu quero
 
     def get_rate(
